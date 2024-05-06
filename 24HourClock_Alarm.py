@@ -5,6 +5,8 @@ alarm_delay = int(input('Hours until alarm sounds: \n'))
 # determines time that the alarm will go off
 temp_val = alarm_delay % 24
 alarm_time = time_now + temp_val
+if (alarm_time > 24):
+    alarm_time = alarm_time - 24
 
 # determines time of alarm in 12-hour time
 twelve_time = alarm_time - 12
